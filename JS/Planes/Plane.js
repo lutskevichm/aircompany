@@ -11,18 +11,24 @@ class Plane {
         return this.model;
     }
 
-    getMS() {
+    setModel(value) {
+        this.model = value;
+    }
+
+    getMaxSpeed() {
         return this.maxSpeed;
     }
 
-    Get_Max_Flight_Distance() {
+    setMaxSpeed(value) {
+        this.maxSpeed = value;
+    }
+
+    getMaxFlightDistance() {
         return this.maxFlightDistance;
     }
 
-    getMinLoadCapacity() {
-     let result = this.maxLoadCapacity;
-     return result;
+    getMaxLoadCapacity() {
+        return this.maxLoadCapacity;
     }
 }
-
 module.exports = Plane;
